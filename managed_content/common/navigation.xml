@@ -1,0 +1,17 @@
+<ul id="navigation">
+<?php
+/* REMOVE THIS OUTPUT */
+echo '<li>NAVIGATION</li>';
+$xslDoc = new DOMDocument();
+$xslDoc->load("xsl/topmenu.xsl");
+
+$xmlDoc = new DOMDocument();
+$xmlDoc->load("xml/FRAMEWORK.xml");
+
+$proc = new XSLTProcessor();
+$proc->importStylesheet($xslDoc);
+$proc->setParameter('', 'current', 'home');
+$navigation = $proc->transformToXML($xmlDoc);
+echo $navigation;
+?>
+</ul>

@@ -1,0 +1,8 @@
+<ul id="breadcrumb">
+<?php 
+for ($i = 1; $i < $page_level; $i++) {
+	echo '<li><a href="index.php?level=' . $i . '&amp;pageid=' . ${"ancestor_ident_$i"} . '">' . ${"ancestor_$i"} . '</a></li>';
+}
+echo '<li><a href="index.php?level=' . $page_level . '&amp;pageid=' . $page_identifier . '">' . $title . '</a></li>';
+?>
+</ul>

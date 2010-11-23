@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* standard accessible classes - THIS WILL BE REMOVED VERY SOON */
+
+.hidden{
+	position:absolute;
+	left:-2000em;
+	top:-2000em;
+	height:1px;
+	line-height:1px;
+	overflow:hidden;
+}
+
+#accessible_nav ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+
+#accessible_nav li {
+	padding:0;
+	margin:0;
+	list-style:none;
+	display:inline;
+}
+
+#accessible_nav a:link, #accessible_nav a:visited { 
+	position: absolute;
+	top:1em;
+	left:173px;
+	overflow: hidden;
+	width:0;
+	height:0;
+	z-index:1002;
+	background:#FFFFFF;
+}
+
+#accessible_nav a:active, #accessible_nav a:focus {
+	position:absolute;
+	overflow:visible;
+	width:auto;
+	height:auto;
+	border:0;
+	margin:0;
+	padding:4px;
+	z-index:10000;
+	text-decoration:underline;
+}
+
+ul#navigation {
+}
+
+#navigation li {
+}
+
+#navigation li:last-child {
+}
+
+#navigation a {
+}
+
+#navigation a:hover, #navigation a:focus {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+a {
+}
+
+a:hover, a:focus {
+}
