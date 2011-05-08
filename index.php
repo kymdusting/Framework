@@ -4,7 +4,7 @@
 
 <?php
 /* set the site root individually in every environment */
-$site_root = 'http://localhost:8888/FRAMEWORK/';
+$site_root = 'http://172.16.18.1/FRAMEWORK/';
 
 /* set defaults and include common functionality */
 $error_title = 'FRAMEWORK - Error';
